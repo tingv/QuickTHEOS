@@ -1,6 +1,6 @@
 #!/bin/bash
 
-brew install -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo "Installing homebrew"
 
 brew install ldid xz
@@ -24,7 +24,7 @@ curl -LO https://github.com/theos/sdks/archive/master.zip
  rm -r master.zip $TMP
             ;;
         "Do not need SDK")
-logout
+exit
             ;;
             "Create tweak template")
 cd Desktop
